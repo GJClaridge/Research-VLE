@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VLE - Programming Basics</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">Research VLE</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home <span class="sr-only"></span></a> </li>
+        <li><a href="participantinfo.html">Participant information</a> </li>
+        <li class="active"><a href="VLEcontent.html">VLE content</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1>Programming Basics</h1>
+        <p>This page covers the basics of programming, such as variables and control flow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-xs-12">
+        <h2>What are variables?</h2>
+        <p>Variables are the names you give to computer memory locations which are used to store values in a computer program.</p>
+
+<p>For example, assume you want to store two values 5 and 15 in your program and at a later stage as well as a third variable 'hello', you want to use these two values.</p>
+
+<p> Firstly, variables need to be declared. For the example of 5 and 15 above, this is done simply in Python:</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="well col-xs-offset-1 col-xs-10 col-lg-offset-2 col-lg-8">
+<p> a = 5</p>
+<p> b = 15</p>
+<p>x = 'hello'</p>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-xs-12">
+        <p>This has created the variable 'a' with the value of 5, and the variable 'b' with the value of 15, as well as a variable 'x' with the string 'hello'. Numbers and strings are the main values for variables.</p>
+        
+        <p> These variables can now be utilised as needed. For example, the value of the two variables may want to be added together, or maybe you want to take the value of 'a' away from 'b'. This can be achieved in Python by:</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="well col-xs-offset-1 col-xs-10 col-lg-offset-2 col-lg-8">
+<p> a + b</p>
+<p> b - a</p>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-xs-12">
+        <p>This has completed the intended addition and subtraction as intended.</p>
+        
+        <p>However, what if you then want to utilised the results at a later time? You could run the addition or subtraction again... Or you could assign the result to a variable. Using the knowledge you have learnt here, what is the correct way to assign the output of the addition of the two variables to another variable? </p>
+        
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBFJTEwRJN4Pt4IvaWllFZXEazopemHtCbperruW_r-a-5og/viewform?embedded=true" width="1150" height="500" frameborder="1" marginheight="0" marginwidth="0">Loading...</iframe>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-xs-12">
+              <h2>Operators</h2>
+        <p>Above, the use of two operators has been shown, being the addition and subtraction operators. There are several different operators used in programming, shown below are the Python ones:</p>
+ </section>
+ <section class="well col-lg-offset-3 col-lg-6 col-xs-offset-0 col-xs-12">
+        <table width="559" border="1">
+  <tbody>
+    <tr>
+      <th width="57" scope="col">Example</th>
+      <th width="157" scope="col">Operator</th>
+      <th width="323" scope="col">Description</th>
+    </tr>
+    <tr>
+      <td>a + b</td>
+      <td>Addition (+)</td>
+      <td>Add each variable together.</td>
+    </tr>
+    <tr>
+      <td>a - b</td>
+      <td>Subtraction (-)</td>
+      <td>Subtract 'b' from 'a'</td>
+    </tr>
+    <tr>
+      <td>a * b</td>
+      <td>Multiplication (*)</td>
+      <td>Multiply together variables.</td>
+    </tr>
+    <tr>
+      <td>a / b</td>
+      <td>Division (/)</td>
+      <td>Divide left variable by right variable.</td>
+    </tr>
+    <tr>
+      <td>a % b</td>
+      <td>Modulus (%)</td>
+      <td>Divide left variable by right variable, return remainder.</td>
+    </tr>
+    <tr>
+      <td>a ** b</td>
+      <td>Exponent (**)</td>
+      <td>Left hand vairable to the power of the right hand variable.</td>
+    </tr>
+    <tr>
+      <td> a == b</td>
+      <td> Equal (==)</td>
+      <td>Comparison - Are the variables equal. Returns True or False.</td>
+    </tr>
+    <tr>
+      <td>a != b</td>
+      <td>Not equal (!+)</td>
+      <td>Comparison - Are the variables not equal. Returns True or False.</td>
+    </tr>
+    <tr>
+      <td>a &gt; b</td>
+      <td>Greater than (&gt;)</td>
+      <td>Comparison - Is the left variable greater than the right variable. Returns True or False</td>
+    </tr>
+    <tr>
+      <td>a &lt; b</td>
+      <td>Less than (&lt;)</td>
+      <td>Comparison - Is the left variable less than the right variable. Returns True or False</td>
+    </tr>
+    <tr>
+      <td>a &gt;= b</td>
+      <td>Greater or Equal (&gt;=)</td>
+      <td>Comparison - Is the left variable greater than or equal to the right variable. Returns True or False</td>
+    </tr>
+    <tr>
+      <td>a =&lt; b</td>
+      <td>Less or Equal (=&lt;)</td>
+      <td>Comparison - Is the left variable less than or equal to the right variable. Returns True or False</td>
+    </tr>
+    <tr>
+      <td>c = a + b</td>
+      <td>Assignment (=)</td>
+      <td>Assignment - Assign a value to a variable.</td>
+    </tr>
+    <tr>
+      <td>c += a</td>
+      <td>Add and Assign (+=)</td>
+      <td>Assignment - Add a value to the current value of the variable and assign it to a variable.</td>
+    </tr>
+    <tr>
+      <td>c -= a</td>
+      <td>Subtract and Assign (-=)</td>
+      <td>Assignment - Subtract a value from the current value of the variable and assign it to a variable.</td>
+    </tr>
+    <tr>
+      <td>c *+ a</td>
+      <td>Multiply and Assign (8=)</td>
+      <td>Assignment - Multiply the value of a variable to the current variable and assign it to a variable.</td>
+    </tr>
+    <tr>
+      <td>c /= a</td>
+      <td>Divide and Assign (/=)</td>
+      <td>Assignment - Divide the value of a variable to the current variable and assign it to a variable.</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-xs-12">
+              <h2>Control Flow</h2>
+        <p>Using the above information, you should be able to create simple programs that perform different functions. By intergrating control flows, you should be able to create even more complex programs. </p>
+        <p>By utilising conditional operators, three different types of control flow can be used. Firstly, if statements can be used if something fits a criteria. If more than one criteria is present, elif can be used. For any result that does not meet a criteria. Else is used. An example is shown below:</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="well col-xs-offset-1 col-xs-10 col-lg-offset-2 col-lg-8">
+<p> if a + b == 20</p>
+<p style="margin-left: 40px">print 'Yes!'</p>
+<p> elif a + b == 40</p>
+<p style="margin-left: 40px">print 'Opps!'</p>
+<p> else</p>
+<p style="margin-left: 40px">print 'Oh no!'</p>
+
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-xs-12">
+        <p>Given that 'a' still equals 5 and 'b' still equals 15, the given output of the if statement above will be 'Yes!' since the value does equal 20. This is just one example of the use of if statements. </p>
+        <p>The next two control flows create loops. Loops allow for continual cycling of code until certain requirements are met, or while certain requirements are met. These are while and for loops. These work in the same form as if statement. While will run code only while the condicition is met, and for will run to a given condition. Below is an example of a while loop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="well col-xs-offset-1 col-xs-10 col-lg-offset-2 col-lg-8">
+<p>x = 5</p>
+<p>y = 0</p>
+<p>z = 10</p>
+<p> while y =&lt; x</p>
+<p style="margin-left: 40px">z+=2</p>
+<p style="margin-left: 40px">y+=1</p>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-xs-12">
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSco1sYaUuqo4QomRFgxit-3WuXCtxIF38SYzBFOfqvb9IWt6g/viewform?embedded=true" width="1150" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row"> </div>
+</div>
+<div class="container"> </div>
+<hr>
+<div class="container"> </div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12"> </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
